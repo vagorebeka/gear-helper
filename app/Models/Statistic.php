@@ -11,10 +11,12 @@ class Statistic extends Model
 
     protected $visible = [
         'id',
+        'abbr',
         'name'
     ];
 
     protected $fillable = [
+        'abbr',
         'name'
     ];
 }
