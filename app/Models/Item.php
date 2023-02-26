@@ -11,6 +11,7 @@ class Item extends Model
 
     protected $visible = [
         'id',
+        'name',
         'stat1',
         'stat1amount',
         'stat2',
@@ -22,6 +23,7 @@ class Item extends Model
     ];
 
     protected $fillable = [
+        'name',
         'stat1',
         'stat1amount',
         'stat2',

@@ -11,10 +11,12 @@ class Material extends Model
 
     protected $visible = [
         'id',
-        'name'
+        'name',
+        'characterClass'
     ];
 
     protected $fillable = [
-        'name'
+        'name',
+        'characterClass'
     ];
 }

@@ -14,13 +14,17 @@ class CharacterClass extends Model
         'name',
         'stat1',
         'stat2',
-        'stat3'
+        'stat3',
+        'stat4',
+        'stat5'
     ];
 
     protected $fillable = [
         'name',
         'stat1',
         'stat2',
-        'stat3'
+        'stat3',
+        'stat4',
+        'stat5'
     ];
 }
