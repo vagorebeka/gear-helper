@@ -15,10 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('stat1');
+            $table->foreign('stat1')->references('id')->on('statistics')->onDelete('cascade');
             $table->string('stat2');
+            $table->foreign('stat2')->references('id')->on('statistics')->onDelete('cascade');
             $table->string('stat3');
+            $table->foreign('stat3')->references('id')->on('statistics')->onDelete('cascade');
             $table->string('stat4');
+            $table->foreign('stat4')->references('id')->on('statistics')->onDelete('cascade');
             $table->string('stat5');
+            $table->foreign('stat5')->references('id')->on('statistics')->onDelete('cascade');
             $table->timestamps();
         });
     }
