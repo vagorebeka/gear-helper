@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('stat1');
+            $table->integer('stat1amount');
+            $table->string('stat2');
+            $table->integer('stat2amount');
+            $table->string('stat3');
+            $table->integer('stat3amount');
+            $table->string('slot');
+            $table->string('material');
             $table->timestamps();
         });
     }
