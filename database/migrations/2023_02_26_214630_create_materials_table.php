@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('materials', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('class_id');
-            $table->foreign('class_id')->references('id')->on('character_classes')->onDelete('cascade');
+            $table->string('class');
+            $table->foreign('class')->references('name')->on('character_classes')->onDelete('cascade');
             $table->timestamps();
         });
     }
