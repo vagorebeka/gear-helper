@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('items', function (Blueprint $table) {
-            $table->string('name')->primary();
+            $table->id();
+            $table->string('name')->unique();
             $table->string('stat1', 3);
             $table->foreign('stat1')->references('abbr')->on('statistics')->onDelete('cascade');
             $table->integer('stat1amount');
@@ -23,7 +24,7 @@ return new class extends Migration
             $table->foreign('stat3')->references('abbr')->on('statistics')->onDelete('cascade');
             $table->integer('stat3amount');
             $table->string('slot');
-            $table->integer('material');
+            $table->string('material');
             $table->foreign('material')->references('name')->on('materials')->onDelete('cascade');
             $table->timestamps();
         });
