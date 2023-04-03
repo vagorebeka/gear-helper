@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('materials', function (Blueprint $table) {
-            $table->integer('id');
-            $table->string('name');
+            $table->id();
+            $table->string('name')->primary();
             $table->string('class');
             $table->foreign('class')->references('name')->on('character_classes')->onDelete('cascade');
             $table->timestamps();

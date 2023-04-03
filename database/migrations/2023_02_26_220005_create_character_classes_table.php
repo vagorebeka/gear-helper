@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('character_classes', function (Blueprint $table) {
-            $table->string('name')->primary();
+            $table->id();
+            $table->string('name')->unique();
             $table->string('stat1', 3);
             $table->foreign('stat1')->references('abbr')->on('statistics')->onDelete('cascade');
             $table->string('stat2', 3);

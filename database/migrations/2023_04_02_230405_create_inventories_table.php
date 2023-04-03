@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('inventories', function (Blueprint $table) {
+            $table->id();
             $table->string('user');
             $table->foreign('user')->references('username')->on('users')->onDelete('cascade');
             $table->integer('item');
