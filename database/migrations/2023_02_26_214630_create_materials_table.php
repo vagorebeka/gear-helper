@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('materials', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->primary();
+            $table->string('name')->unique();
             $table->string('class');
             $table->foreign('class')->references('name')->on('character_classes')->onDelete('cascade');
             $table->timestamps();
