@@ -302,6 +302,24 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
 COMMIT;
 
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `admin`) VALUES
+(1, 'admin', 'admin@example.com', NULL, 'admin', NULL, NULL, NULL, 1),
+(2, 'Deondre', 'fernando.kassulke@example.com', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'waX5xOsg5n', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(3, 'Marta', 'verla.satterfield@example.org', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'jYrfclAcHK', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(4, 'Kale', 'aaliyah.cassin@example.net', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '68jOGojOqj', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(5, 'Ari', 'bosco.rudolph@example.net', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'ak5rk0xjE7', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(6, 'Nathaniel', 'feil.jorge@example.net', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'T6OK1NmJ0v', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(7, 'Mathew', 'dickinson.ken@example.com', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'JoMxrX2cqS', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(8, 'Gregorio', 'river01@example.org', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'YFWRx97j7L', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(9, 'Titus', 'zfritsch@example.net', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'RERDIvRE0j', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(10, 'Sidney', 'sleannon@example.com', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'nX1J4QErrT', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(11, 'Gust', 'roy.predovic@example.com', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '5epU1tGiwh', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0);
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
