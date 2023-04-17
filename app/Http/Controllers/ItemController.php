@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Item;
+use App\Models\CharacterClass;
 use App\Http\Requests\StoreItemRequest;
 use App\Http\Requests\UpdateItemRequest;
 
@@ -13,7 +14,10 @@ class ItemController extends Controller
      */
     public function index()
     {
-        //
+        $item = item::all();
+        $c = Characterclass::all();
+
+        return view("item.item",['item'=>$item,'c'=>$c]);
     }
 
     /**
@@ -37,7 +41,7 @@ class ItemController extends Controller
      */
     public function show(Item $item)
     {
-        //
+        return view("item.show",["item" => $item]);
     }
 
     /**

@@ -26,3 +26,4 @@ Route::apiResource("/statistic", StatisticController::class);
 Route::apiResource("/characterclass", CharacterClassController::class);
 Route::apiResource("/item", ItemController::class);
 Route::apiResource("/user", UserController::class);
+Route::apiResource("/view",itemController::class);
