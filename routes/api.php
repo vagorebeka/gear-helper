@@ -27,3 +27,5 @@ Route::apiResource("/characterclass", CharacterClassController::class);
 Route::apiResource("/item", ItemController::class);
 Route::apiResource("/user", UserController::class);
 Route::apiResource("/view",itemController::class);
+Route::post("/login", [UserController::class, "login"]);
+Route::post("/register", [UserController::class, "register"]);
