@@ -123,21 +123,21 @@ CREATE TABLE IF NOT EXISTS `items` (
 
 INSERT INTO `items` (`id`, `name`, `stat1`, `stat1amount`, `stat2`, `stat2amount`, `stat3`, `stat3amount`, `slot`, `material`, `created_at`, `updated_at`) VALUES
 (1, 'Silk Hood', 'INT', 1, 'SPI', 2, 'AGI', 1, 'head', '1', '2023-04-02 17:15:42', NULL),
-(2, 'Enchanter’s Hood', 'INT', 3, 'SPI', 2, 'STA', 1, 'head', '1', '2023-04-02 18:06:13', NULL),
+(2, "Enchanter's Hood", 'INT', 3, 'SPI', 2, 'STA', 1, 'head', '1', '2023-04-02 18:06:13', NULL),
 (3, 'Fishing Hat', 'AGI', 4, 'SPI', 3, 'STA', 3, 'head', '1', '2023-04-02 20:40:58', NULL),
 (4, 'Wizard Hat', 'INT', 7, 'SPI', 3, 'STA', 2, 'head', '1', '2023-04-02 20:40:58', NULL),
 (5, 'Lucky Cowl', 'STA', 3, 'SPI', 3, 'AGI', 3, 'head', '1', '2023-04-02 20:40:58', NULL),
 (6, 'Rugged Hat', 'STA', 2, 'SPI', 3, 'AGI', 3, 'head', '2', '2023-04-02 20:40:58', NULL),
 (7, 'Cutthroat Cap', 'STR', 2, 'STA', 3, 'AGI', 3, 'head', '2', '2023-04-02 20:40:58', NULL),
 (8, 'Cloaked Cowl', 'STA', 2, 'SPI', 2, 'AGI', 6, 'head', '2', '2023-04-02 20:40:58', NULL),
-(9, 'Wanderer\'s Cap', 'STA', 6, 'SPI', 3, 'AGI', 3, 'head', '2', '2023-04-02 20:40:58', NULL),
+(9, "Wanderer's Cap", 'STA', 6, 'SPI', 3, 'AGI', 3, 'head', '2', '2023-04-02 20:40:58', NULL),
 (10, 'Holy Circlet', 'STA', 5, 'SPI', 3, 'INT', 3, 'head', '3', '2023-04-02 20:40:58', NULL),
-(11, 'Miner\'s Helmet', 'STA', 6, 'STR', 4, 'AGI', 1, 'head', '3', '2023-04-02 20:40:58', NULL),
-(12, 'Guard\'s Helm', 'STA', 3, 'SPI', 3, 'STR', 3, 'head', '3', '2023-04-02 20:40:58', NULL),
+(11, "Miner's Helmet", 'STA', 6, 'STR', 4, 'AGI', 1, 'head', '3', '2023-04-02 20:40:58', NULL),
+(12, "Guard's Helm", 'STA', 3, 'SPI', 3, 'STR', 3, 'head', '3', '2023-04-02 20:40:58', NULL),
 (13, 'Sacrificial Vestments', 'INT', 8, 'SPI', 4, 'STA', 3, 'torso', '1', '2023-04-02 20:48:54', NULL),
 (14, 'Silk Vest', 'SPI', 6, 'INT', 3, 'STA', 3, 'torso', '1', '2023-04-02 20:48:54', NULL),
-(15, 'Enchanter\'s Robes', 'AGI', 1, 'SPI', 7, 'STA', 4, 'torso', '1', '2023-04-02 20:48:54', NULL),
-(16, 'Fisherman\'s Vest', 'INT', 2, 'SPI', 6, 'STA', 7, 'torso', '1', '2023-04-02 20:48:54', NULL),
+(15, "Enchanter's Robes", 'AGI', 1, 'SPI', 7, 'STA', 4, 'torso', '1', '2023-04-02 20:48:54', NULL),
+(16, "Fisherman's Vest", 'INT', 2, 'SPI', 6, 'STA', 7, 'torso', '1', '2023-04-02 20:48:54', NULL),
 (17, 'Lucky Robe', 'STA', 3, 'SPI', 8, 'AGI', 3, 'torso', '1', '2023-04-02 20:48:54', NULL),
 (18, 'Tanned Jacket', 'STA', 3, 'SPI', 3, 'AGI', 6, 'torso', '2', '2023-04-02 20:48:54', NULL),
 (19, 'Slit Vest', 'STR', 2, 'STA', 3, 'AGI', 7, 'torso', '2', '2023-04-02 20:48:54', NULL),
@@ -147,17 +147,17 @@ INSERT INTO `items` (`id`, `name`, `stat1`, `stat1amount`, `stat2`, `stat2amount
 (23, 'Heavy Chestguard', 'STA', 6, 'STR', 4, 'SPI', 2, 'torso', '3', '2023-04-02 20:48:54', NULL),
 (24, 'Heroic Breastplate', 'STA', 3, 'SPI', 7, 'STR', 6, 'torso', '3', '2023-04-02 20:48:54', NULL),
 (25, 'Silk Pants', 'INT', 6, 'SPI', 4, 'STA', 3, 'legs', '1', '2023-04-02 20:55:57', NULL),
-(26, 'Enchanter\'s Legwarmers', 'SPI', 6, 'INT', 3, 'AGI', 3, 'legs', '1', '2023-04-02 20:55:57', NULL),
-(27, 'Fisherman\'s Pants', 'INT', 1, 'SPI', 7, 'STA', 3, 'legs', '1', '2023-04-02 20:55:57', NULL),
+(26, "Enchanter's Legwarmers", 'SPI', 6, 'INT', 3, 'AGI', 3, 'legs', '1', '2023-04-02 20:55:57', NULL),
+(27, "Fisherman's Pants", 'INT', 1, 'SPI', 7, 'STA', 3, 'legs', '1', '2023-04-02 20:55:57', NULL),
 (28, 'Lucky Leggings', 'INT', 2, 'SPI', 6, 'STA', 4, 'legs', '1', '2023-04-02 20:55:57', NULL),
 (29, 'Woven Leggings', 'STA', 3, 'SPI', 7, 'AGI', 4, 'legs', '1', '2023-04-02 20:55:57', NULL),
-(30, 'Wanderer\'s Britches', 'STA', 5, 'SPI', 5, 'AGI', 2, 'legs', '2', '2023-04-02 20:55:57', NULL),
+(30, "Wanderer's Britches", 'STA', 5, 'SPI', 5, 'AGI', 2, 'legs', '2', '2023-04-02 20:55:57', NULL),
 (31, 'Camouflage Leggings', 'STR', 2, 'STA', 3, 'AGI', 7, 'legs', '2', '2023-04-02 20:55:57', NULL),
 (32, 'Cured Pants', 'STA', 4, 'SPI', 4, 'AGI', 5, 'legs', '2', '2023-04-02 20:55:57', NULL),
 (33, 'Tanned Pants', 'STA', 6, 'STR', 3, 'AGI', 3, 'legs', '2', '2023-04-02 20:55:57', NULL),
 (34, 'Heavy Legguards', 'STA', 5, 'SPI', 3, 'STR', 8, 'legs', '3', '2023-04-02 20:55:57', NULL),
-(35, 'Miner\'s Legguards', 'STA', 6, 'STR', 4, 'SPI', 4, 'legs', '3', '2023-04-02 20:55:57', NULL),
-(36, 'Guard\'s Legplates', 'STA', 3, 'SPI', 6, 'STR', 6, 'legs', '3', '2023-04-02 20:55:57', NULL);
+(35, "Miner's Legguards", 'STA', 6, 'STR', 4, 'SPI', 4, 'legs', '3', '2023-04-02 20:55:57', NULL),
+(36, "Guard's Legplates", 'STA', 3, 'SPI', 6, 'STR', 6, 'legs', '3', '2023-04-02 20:55:57', NULL);
 
 -- --------------------------------------------------------
 
@@ -288,17 +288,36 @@ INSERT INTO `statistics` (`abbr`, `name`, `created_at`, `updated_at`) VALUES
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
   `password` varchar(255) NOT NULL,
+  `admin` boolean NOT NULL DEFAULT 0,
   `remember_token` varchar(100) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `users_username_unique` (`username`),
+  UNIQUE KEY `users_username_unique` (`name`),
   UNIQUE KEY `users_email_unique` (`email`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb3 COLLATE=utf8mb3_unicode_ci;
+COMMIT;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `admin`) VALUES
+(1, 'admin', 'admin@example.com', NULL, 'admin', NULL, NULL, NULL, 1),
+(2, 'Deondre', 'fernando.kassulke@example.com', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'waX5xOsg5n', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(3, 'Marta', 'verla.satterfield@example.org', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'jYrfclAcHK', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(4, 'Kale', 'aaliyah.cassin@example.net', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '68jOGojOqj', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(5, 'Ari', 'bosco.rudolph@example.net', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'ak5rk0xjE7', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(6, 'Nathaniel', 'feil.jorge@example.net', '2023-04-17 18:33:05', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'T6OK1NmJ0v', '2023-04-17 18:33:05', '2023-04-17 18:33:05', 0),
+(7, 'Mathew', 'dickinson.ken@example.com', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'JoMxrX2cqS', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(8, 'Gregorio', 'river01@example.org', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'YFWRx97j7L', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(9, 'Titus', 'zfritsch@example.net', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'RERDIvRE0j', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(10, 'Sidney', 'sleannon@example.com', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'nX1J4QErrT', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0),
+(11, 'Gust', 'roy.predovic@example.com', '2023-04-17 18:33:07', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', '5epU1tGiwh', '2023-04-17 18:33:07', '2023-04-17 18:33:07', 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
