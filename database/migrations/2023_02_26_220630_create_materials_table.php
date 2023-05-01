@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('inventories', function (Blueprint $table) {
+        Schema::create('materials', function (Blueprint $table) {
             $table->id();
-            $table->string('user');
-            $table->foreign('user')->references('username')->on('users')->onDelete('cascade');
-            $table->bigInteger('item')->unsigned();
-            $table->foreign('item')->references('id')->on('items')->onDelete('cascade');
+            $table->string('name')->unique();
+            $table->string('class');
+            $table->foreign('class')->references('name')->on('character_classes')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('inventories');
+        Schema::dropIfExists('materials');
     }
 };
