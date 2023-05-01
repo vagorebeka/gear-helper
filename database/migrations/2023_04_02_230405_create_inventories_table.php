@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('inventories', function (Blueprint $table) {
             $table->id();
             $table->string('user');
-            $table->foreign('user')->references('username')->on('users')->onDelete('cascade');
+            $table->foreign('user')->references('name')->on('users')->onDelete('cascade');
             $table->bigInteger('item')->unsigned();
             $table->foreign('item')->references('id')->on('items')->onDelete('cascade');
             $table->timestamps();

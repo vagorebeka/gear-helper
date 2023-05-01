@@ -51,9 +51,7 @@
                             @endif
 
                         @else
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('item.osszehasonlit') }}">Összehasonlitás</a>
-                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('item.index') }}">Itemek</a>
                             </li>
