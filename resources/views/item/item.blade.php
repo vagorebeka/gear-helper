@@ -33,41 +33,23 @@
                         <th>{{ $items->stat3amount }}</th>
                         <th>{{ $items->slot }}</th>
                         <th>{{ $items->material }}</th>
-                        <th> <a href="{{ route('item.show', $items->id) }}" class="btn btn-secondary"> Részletek  </a>      </th>
+                        <th> <a href="{{ route('item.show', $items->id) }}" class="btn btn-outline-secondary"> Részletek  </a>
+                            <a href="{{ route('item.edit', $items->id) }}"
+                                class="btn btn-outline-secondary">Módosítás</a>
+                            @include('item.delete-button', ['items' => $items])
+
+                        </th>
 
                     </tr>
                 @endforeach
-                
+
 
             </tbody>
-        </table>   
-        
-                <div>
-                    <select name="" id="">
-                    @foreach ($item as $items)
-                            <option value="">{{ $items->name }}</option>
-                    @endforeach   
-                    </select>
-                    <select name="" id="">
-                    @foreach ($item as $items)
-                            <option value="">{{ $items->name }}</option>
-                    @endforeach   
-                    </select>
-                </div>
-                <div>
-                    <select name="" id="">
-                    @foreach ($c as $cs)
-                            <option value="">{{ $cs->name }}</option>
-                    @endforeach   
-                    </select>
-                    <select name="" id="">
-                    @foreach ($c as $cs)
-                            <option value="">{{ $cs->name }}</option>
-                    @endforeach   
-                    </select>
-                </div>
+        </table>
 
 
-        
+
+
+
     </div>
 @endsection

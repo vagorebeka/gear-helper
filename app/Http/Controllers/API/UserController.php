@@ -71,7 +71,7 @@ class UserController extends Controller
         ];
         return response($response, 201);
     }
-
+    
     public function login(LoginRequest $request)
     {
         if (Auth::attempt($request->all())) {

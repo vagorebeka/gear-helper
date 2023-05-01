@@ -25,7 +25,7 @@ class ItemController extends Controller
      */
     public function create()
     {
-        //
+        return view("item.create");
     }
 
     /**
@@ -33,7 +33,10 @@ class ItemController extends Controller
      */
     public function store(StoreItemRequest $request)
     {
-        //
+        $item = new item();
+        $item->fill($request->all());
+        $item->save();
+        return redirect()->route("item.show", $item->id);
     }
 
     /**
@@ -49,7 +52,7 @@ class ItemController extends Controller
      */
     public function edit(Item $item)
     {
-        //
+        return view("item.edit", ["item" => $item]);
     }
 
     /**
@@ -65,6 +68,12 @@ class ItemController extends Controller
      */
     public function destroy(Item $item)
     {
-        //
+        $item->delete();
+        return redirect()->route("item.index");
+    }
+
+    public function osszehasonlit(Item $item)
+    {
+        return view("item.osszehasonlit", ["item" => $item]);
     }
 }
