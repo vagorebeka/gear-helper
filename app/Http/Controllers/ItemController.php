@@ -60,7 +60,9 @@ class ItemController extends Controller
      */
     public function update(UpdateItemRequest $request, Item $item)
     {
-        //
+        $item->fill($request->all());
+        $item->save();
+        return redirect()->route("item.show", $item->id);
     }
 
     /**
